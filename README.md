@@ -19,6 +19,9 @@ Single line ROS Noetic Uninstall
 ```
 wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_uninstall_noetic.sh && chmod +x ./ros_uninstall_noetic.sh && ./ros_uninstall_noetic.sh
 ```
+## Tutorial Video
+
+Click on the image to play the tutorial video
 
 [![Tutorial Video](https://i2.wp.com/robocademy.com/wp-content/uploads/2020/05/noetic_blog1-min.png)](https://youtu.be/IqrpSi2Xueg)
 
