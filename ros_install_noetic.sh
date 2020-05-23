@@ -137,7 +137,7 @@ echo ""
 echo "#######################################################################################################################"
 echo ">>> {Step 7: Testing ROS installation, checking ROS version.}"
 echo ""
-rosversion -d 
+echo ">>> {Type [ rosversion -d ] to get the current ROS installed version}"
 echo ""
 echo "#######################################################################################################################"
 
