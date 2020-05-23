@@ -7,6 +7,7 @@
 #set -x
 
 name_ros_distro=noetic 
+user_name=$(whoami)
 echo "#######################################################################################################################"
 echo ""
 echo ">>> {Starting ROS Noetic Installation}"
@@ -62,7 +63,15 @@ echo ">>> {Step 3: Set up your keys}"
 echo ""
 echo ">>> {Installing curl for adding keys}"
 #Installing curl: Curl instead of the apt-key command, which can be helpful if you are behind a proxy server: 
-sudo apt install curl
+#Checking curl is installed or not
+dpkg -s curl &> /dev/null
+
+if [ $? -eq 0 ]; then
+    echo "Curl is already installed!"
+else
+    sudo apt install curl
+fi
+
 echo "#######################################################################################################################"
 echo ""
 #Adding keys
@@ -122,8 +131,8 @@ echo "##########################################################################
 echo ">>> {Step 6: Setting ROS Environment, This will add ROS environment to .bashrc.}" 
 echo ">>> { After adding this, you can able to access ROS commands in terminal}"
 echo ""
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+echo "source /opt/ros/noetic/setup.bash" >> /home/$user_name/.bashrc
+source /home/$user_name/.bashrc
 echo ""
 echo "#######################################################################################################################"
 echo ">>> {Step 7: Testing ROS installation, checking ROS version.}"
