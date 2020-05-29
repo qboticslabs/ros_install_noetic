@@ -63,14 +63,18 @@ echo ">>> {Step 3: Set up your keys}"
 echo ""
 echo ">>> {Installing curl for adding keys}"
 #Installing curl: Curl instead of the apt-key command, which can be helpful if you are behind a proxy server: 
+#TODO:Checking package is not working sometimes, so disabling it
 #Checking curl is installed or not
-dpkg -s curl &> /dev/null
+#name=curl
+#which $name > /dev/null 2>&1
 
-if [ $? -eq 0 ]; then
-    echo "Curl is already installed!"
-else
-    sudo apt install curl
-fi
+#if [ $? == 0 ]; then
+#    echo "Curl is already installed!"
+#else
+#    echo "Curl is not installed,Installing Curl"
+
+sudo apt install curl
+#fi
 
 echo "#######################################################################################################################"
 echo ""
