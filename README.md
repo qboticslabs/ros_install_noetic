@@ -1,6 +1,6 @@
 # Quick ROS Noetic Install
 
-This repository is having a simple bash script to install ROS Noetic Ninjemys.
+This repository is having a simple bash script to install ROS Noetic Ninjemys and ROS 2 Humble.
 
 [Here is the detailed blog post on ROS Noetic and its installation](https://robocademy.com/2020/05/23/getting-started-with-new-ros-noetic-ninjemys/).
 
