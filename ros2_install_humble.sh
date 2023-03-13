@@ -40,7 +40,7 @@ echo ""
 locale  # check for UTF-8
 
 sudo apt update 
-sudo apt install locales
+sudo apt install -y locales
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -137,7 +137,7 @@ echo ""
 echo ">>>  {Starting ROS installation, this will take about 20 min. It will depends on your internet  connection}"
 echo ""
 sudo apt-get install -y ros-${name_ros_distro}-${package_type} 
-sudo apt install ros-dev-tools
+sudo apt install -y ros-dev-tools
 echo ""
 echo ""
 echo "#######################################################################################################################"
