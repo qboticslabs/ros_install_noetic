@@ -150,7 +150,8 @@ echo ""
 echo "#######################################################################################################################"
 echo ">>> {Step 7: Testing ROS installation, checking ROS version.}"
 echo ""
-echo ">>> {Type [ rosversion -d ] to get the current ROS installed version}"
+echo ">>> {Type [printenv ROS_DISTRO] to get the current ROS installed version}"
 echo ""
+printenv ROS_DISTRO
 echo "#######################################################################################################################"
 
