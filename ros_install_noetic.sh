@@ -40,6 +40,8 @@ sudo add-apt-repository universe
 sudo add-apt-repository restricted
 sudo add-apt-repository multiverse
 
+sudo apt update
+
 echo ""
 echo ">>> {Done: Added Ubuntu repositories}"
 echo ""
@@ -73,7 +75,7 @@ echo ">>> {Installing curl for adding keys}"
 #else
 #    echo "Curl is not installed,Installing Curl"
 
-sudo apt install curl
+sudo apt install -y curl
 #fi
 
 echo "#######################################################################################################################"
